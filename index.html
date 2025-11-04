@@ -73,10 +73,12 @@
       font-size: 0.95rem;
     }
 
-    .uploads audio {
+    iframe {
       width: 100%;
-      margin-top: 6px;
-      border-radius: 6px;
+      height: 150px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 8px;
     }
 
     footer {
@@ -137,10 +139,6 @@
       .card {
         padding: 18px;
       }
-
-      .uploads audio {
-        width: 100%;
-      }
     }
 
     @media (max-width: 480px) {
@@ -158,6 +156,10 @@
 
       footer {
         font-size: 0.75rem;
+      }
+
+      iframe {
+        height: 180px;
       }
     }
   </style>
@@ -216,19 +218,23 @@
 
         <section class="card">
           <h2>5. Testimonios de la comunidad</h2>
-          <p>🎧 Audios enviados por los habitantes de Quintanares que describen las afectaciones provocadas por las alcantarillas tapadas:</p>
+          <p>🎧 A continuación se presentan entrevistas realizadas a habitantes de Quintanares que narran, desde su experiencia, cómo las alcantarillas tapadas han afectado su salud, su entorno y su tranquilidad.</p>
+
           <div class="uploads">
             <div>
-              <p class="muted">🗣️ Entrevista 1</p>
-              <audio controls src="https://www.mixcloud.com/camilo-quitora/entrevista/"></audio>
+              <p class="muted">🗣️ Entrevista 1 -</p>
+              <iframe src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Fcamilo-quitora%2Fentrevista%2F" allow="autoplay"></iframe>
             </div>
+
             <div>
-              <p class="muted">🗣️ Entrevista 2</p>
-              <audio controls src="audios/Audio2.aac"></audio>
+              <p class="muted">🗣️ Entrevista 2 -</p>
+             <iframe src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Fcamilo-quitora%2Fentrevista2%2F" allow="autoplay"></iframe>
             </div>
+
             <div>
-              <p class="muted">🗣️ Entrevista 3</p>
-              <audio controls src="audios/Audio3.aac"></audio>
+              <p class="muted">🗣️ Entrevista 3-</p>
+
+              <iframe src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Fcamilo-quitora%2Fentrevista3%2F" allow="autoplay"></iframe>
             </div>
           </div>
         </section>
@@ -270,4 +276,3 @@
   </div>
 </body>
 </html>
-
